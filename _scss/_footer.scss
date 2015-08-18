@@ -1,0 +1,12 @@
+.site-footer{
+  padding:20px 0;
+  background:#F2F3F4;
+  &:before{
+    content:"";
+    display:block;
+    position: relative;
+    top:-44px;
+    height: 24px;
+    background:url(../img/page/bg-note.png) repeat-x;
+  }
+}

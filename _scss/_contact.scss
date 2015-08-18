@@ -1,0 +1,47 @@
+#map{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom:50%;
+  pointer-events:none;
+  @media(min-width:768px){
+    padding-bottom:0;
+    height:500px;
+  }
+}
+
+.contact{
+  //background:url(../img/page/wood-04.png);
+  h1{
+    $width:0.8em;
+    position: relative;
+    display:inline-block;
+    padding: 0 $width*2;
+    color:#fff;
+    text-align: center;
+    word-wrap:nowrap;
+    z-index:0;
+    &:before{
+      content:"";
+      display:block;
+      position:absolute;
+      top:50%;
+      left: 0;
+      width: 100%;
+      border:$width solid $green;
+      border-left:none;
+      border-right-color:transparent;
+      transform:translateY(-50%);
+      z-index:-1;
+    }
+  }
+}
+
+.location, .location a{
+  position: relative;
+  padding-left:30px;
+  .icon{
+    position: absolute;
+    left: 0;
+    font-size: 140%;
+  }
+}

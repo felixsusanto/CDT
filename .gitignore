@@ -43,3 +43,6 @@ Temporary Items
 .apdisk
 
 imedia-revamp
+node_modules
+.sass-cache
+bower_components

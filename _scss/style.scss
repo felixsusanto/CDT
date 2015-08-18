@@ -1,0 +1,27 @@
+@import "compass";
+$yellow:#F1C40F;
+$green:#1ABC9C;
+$purple:#9B59B6;
+$blue:#3498DB;
+$text:#2C3E50;
+$red:#E74C3C;
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  color:$text;
+} 
+@import "top-section";
+@import "skills";
+@import "team";
+@import "portfolio";
+@import "contact";
+@import "footer";
+@import "parallax";
+@import "svg";
+
+
+
+

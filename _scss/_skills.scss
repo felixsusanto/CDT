@@ -1,0 +1,102 @@
+.skills{
+  position: relative;
+  min-height: 300px;
+  padding: 100px 0;
+  overflow:hidden;
+  background: url(../img/page/bg-pattern.png);
+  box-shadow:0 50px 50px #fff;
+  >h1{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    color:#fff;
+  }
+  h3{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:$blue;
+  }
+  .thumbnail{
+    border-radius:0;
+    border:none;
+    box-shadow: 0 20px 0 -10px rgba(black, 0.3);
+  }
+  img{
+    width:100%;
+    height:auto;
+  }
+  &:before, &:after{
+    content:"";
+    position: absolute;
+    left: 50%;
+    display:block;
+    width: 0;
+    height: 0;
+    border:100px solid transparent;
+    border-bottom:none;
+    border-left-width:50vw;
+    border-right-width:50vw;
+    transform:translateX(-50%);
+  }
+  &:before{
+    top:0;
+    border-top-color:#fff;
+  }
+  &:after{
+    bottom:0;
+    border-left-color:#fff;
+    border-right-color:#fff;
+  }
+}
+
+.thumbnail{
+  @media(min-width:356px) and (max-width:767px){
+    img{
+      vertical-align: top;
+      display:inline-block;
+      width: 40%;
+    }
+    .caption{
+      display:inline-block;
+      width: 58%;
+    }
+  }
+}
+
+.thumbnail{
+  position: relative;
+  .sme{
+    position: absolute;
+    top:10px;
+    left:-10px;
+    display:inline-block;
+    background-color: $green;
+    padding: 0 20px;
+    box-shadow:0 17px 0 -10px rgba(black,0.5);
+    font-size: 19px;
+    text-transform: uppercase;
+    color:#fff;
+    &:after{
+      content:"";
+      position: absolute;
+      left:0;
+      top:100%;
+      width: 0;
+      height: 0;
+      border:10px solid transparent;
+      border-left:none;
+      border-top:none;
+      border-right-color:darken($green,20%);
+    }
+  }
+  .sme.noob{
+    background-color:$blue;
+    &:after{
+      border-right-color:darken($blue,20%);
+    }
+  }
+}
+

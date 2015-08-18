@@ -1,0 +1,19 @@
+# portfolio
+---
+- {thumb: portfolio-0.jpg, hires: portfolio-0.jpg , classCategory: website responsive,                  caption: This is portfolio of Creative Design Team }
+- {thumb: portfolio-1.jpg, hires: portfolio-1.jpg , classCategory: website responsive,                  caption: This is portfolio of Different Caption    }
+- {thumb: portfolio-2.jpg, hires: portfolio-2.jpg , classCategory: mobile,                              caption: This is portfolio of Creative Design Team }
+- {thumb: portfolio-3.jpg, hires: portfolio-3.jpg , classCategory: animation,                           caption: This is portfolio of Different Caption    }
+- {thumb: portfolio-4.jpg, hires: portfolio-4.jpg , classCategory: graphic-design,                      caption: This is portfolio of Creative Design Team }
+- {thumb: proto.jpg,       hires: proto.gif ,       classCategory: prototype,                           caption: This is portfolio of Different Caption    }
+- {thumb: dummy-01.jpg,    hires: dummy-01.jpg ,    classCategory: website prototype responsive,        caption: This is Dummy portfolio                   }
+- {thumb: dummy-02.jpg,    hires: dummy-02.jpg ,    classCategory: graphic-design responsive,           caption: This is Dummy portfolio                   }
+- {thumb: dummy-03.jpg,    hires: dummy-03.jpg ,    classCategory: animation website,                   caption: This is Dummy portfolio                   }
+- {thumb: dummy-04.jpg,    hires: dummy-04.jpg ,    classCategory: prototype mobile,                    caption: This is Dummy portfolio                   }
+- {thumb: dummy-05.jpg,    hires: dummy-05.jpg ,    classCategory: animation prototype,                 caption: This is Dummy portfolio                   }
+- {thumb: dummy-06.jpg,    hires: dummy-06.jpg ,    classCategory: website graphic-design,              caption: This is Dummy portfolio                   }
+- {thumb: dummy-07.jpg,    hires: dummy-07.jpg ,    classCategory: mobile graphic-design,               caption: This is Dummy portfolio                   }
+- {thumb: dummy-08.jpg,    hires: dummy-08.jpg ,    classCategory: prototype,                           caption: This is Dummy portfolio                   }
+- {thumb: dummy-09.jpg,    hires: dummy-09.jpg ,    classCategory: responsive website,                  caption: This is Dummy portfolio                   }
+- {thumb: dummy-10.jpg,    hires: dummy-10.jpg ,    classCategory: prototype animation graphic-design,  caption: This is Dummy portfolio                   }
+- {thumb: dummy-11.jpg,    hires: dummy-11.jpg ,    classCategory: prototype website,                   caption: This is Dummy portfolio                   }

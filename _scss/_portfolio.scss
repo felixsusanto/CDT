@@ -1,0 +1,46 @@
+.portfolio{
+  position: relative;
+  overflow:hidden;
+  padding-bottom: 50px;
+}
+
+.description{
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 300;
+  @media(min-width:481px){
+    font-size: 1.5em;
+  }
+  @media(min-width:768px){
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media(min-width:991px){
+    width:50%;
+  }
+}
+.thumbnails{
+  text-align: center;
+  img{
+    margin:5px;
+  }
+}
+.control{
+  margin-bottom: 40px;
+  >a{
+    margin-bottom: 5px;
+  }
+}
+
+.grid {
+  width: 320px;
+  margin:0 auto;
+  //background-color: black;
+  @media(min-width:620px){
+    width: 620px;
+  }
+  @media(min-width:930px){
+    width: 930px;
+  }
+}
