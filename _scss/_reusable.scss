@@ -1,0 +1,26 @@
+.ribbon{
+  $width:0.8em;
+  position: relative;
+  display:inline-block;
+  padding: 0 $width*2;
+  margin-bottom: 20px;
+  color:#fff;
+  text-align: center;
+  z-index:1;
+  &:before{
+    content:"";
+    display:block;
+    position:absolute;
+    top:50%;
+    left: 0;
+    width: 100%;
+    border:$width solid $green;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    transform:translateY(-50%);
+    z-index:-1;
+  }
+  @media(max-width:480px){
+    font-size: 24px;
+  }
+}

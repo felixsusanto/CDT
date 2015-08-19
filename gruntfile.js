@@ -28,6 +28,17 @@ module.exports = function(grunt) {
         }
       }
     },
+    postcss: {
+      options: {
+        map:true,
+        processors: [
+          require('autoprefixer-core')({browsers: 'last 2 versions'}), // add vendor prefixes
+        ]
+      },
+      dist: {
+        src: 'css/*.css'
+      }
+    },
     shell: {
       jekyllServe:{
         command: "jekyll serve --baseurl ''"
@@ -48,7 +59,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['_scss/*.scss', '!_site/**/*'],
-        tasks: ['compass', 'shell:jekyllBuild'],
+        tasks: ['compass', 'postcss','shell:jekyllBuild'],
       },
       svgs: {
         files: ['_svgs/*.svg', '!_site/**/*'],
@@ -67,5 +78,5 @@ module.exports = function(grunt) {
   // Creates the `server` task
   grunt.registerTask('serve', ['shell:jekyllServe']);
   //Compile scss task
-  grunt.registerTask('default', ['compass','svgstore', 'shell:jekyllBuild','open', 'watch']);
+  grunt.registerTask('default', ['compass','postcss','svgstore', 'shell:jekyllBuild','open', 'watch']);
 };

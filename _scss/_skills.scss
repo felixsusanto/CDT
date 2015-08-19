@@ -4,7 +4,8 @@
   padding: 100px 0;
   overflow:hidden;
   background: url(../img/page/bg-pattern.png);
-  box-shadow:0 50px 50px #fff;
+  //box-shadow:0 50px 50px #fff;
+  clip-path:polygon(0 0, 50% 80px,100% 0,100% 97%,50% 100%,0 97%);
   >h1{
     text-align: center;
     margin-top: 0;
@@ -28,7 +29,10 @@
     width:100%;
     height:auto;
   }
-  &:before, &:after{
+  @media(min-width:768px){
+    clip-path:polygon(0 0, 50% 80px,100% 0,100% 90%,50% 100%,0 90%);
+  }
+  /*&:before, &:after{
     content:"";
     position: absolute;
     left: 50%;
@@ -50,6 +54,7 @@
     border-left-color:#fff;
     border-right-color:#fff;
   }
+  */
 }
 
 .thumbnail{
