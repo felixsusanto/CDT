@@ -1,3 +1,8 @@
+@mixin findRatio($width, $height){
+  padding-bottom:unquote(($height/$width*100)+'%');
+}
+
+
 .scaling-svg-container {
  position: relative; 
  height: 0; 
@@ -13,9 +18,19 @@
  top: 0;
 }
 
+.map-shadow{
+  @include findRatio(390,22);
+}
+
 .pencil{
   margin:20px 0;
-  padding-bottom:unquote((52/269*100)+'%');
+  @include findRatio(269,52);
+}
+
+.stationery{
+  max-width:560px;
+  margin: 0 auto;
+  @include findRatio(351,270);
 }
 
 .cup{
@@ -30,7 +45,7 @@
     left:-100px;
     width: $size;
     height: $size;
-    z-index:-1;
+    z-index:0;
   }
   @media(min-width:991px){
     width: 360px;
@@ -47,10 +62,10 @@
     $size:300px;
     display:block;
     position: absolute;
-    right:-110px;
+    right:0;
     width: $size;
     height: $size;
-    z-index:-1;
+    z-index:0;
   }
   @media(min-width:991px){
     width: 360px;

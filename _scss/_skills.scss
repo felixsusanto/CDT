@@ -4,7 +4,7 @@
   padding: 100px 0;
   overflow:hidden;
   background: url(../img/page/bg-pattern.png);
-  //box-shadow:0 50px 50px #fff;
+  background-attachment:fixed;
   clip-path:polygon(0 0, 50% 80px,100% 0,100% 97%,50% 100%,0 97%);
   >h1{
     text-align: center;
@@ -32,31 +32,24 @@
   @media(min-width:768px){
     clip-path:polygon(0 0, 50% 80px,100% 0,100% 90%,50% 100%,0 90%);
   }
-  /*&:before, &:after{
-    content:"";
-    position: absolute;
-    left: 50%;
-    display:block;
-    width: 0;
-    height: 0;
-    border:100px solid transparent;
-    border-bottom:none;
-    border-left-width:50vw;
-    border-right-width:50vw;
-    transform:translateX(-50%);
-  }
-  &:before{
-    top:0;
-    border-top-color:#fff;
-  }
-  &:after{
-    bottom:0;
-    border-left-color:#fff;
-    border-right-color:#fff;
-  }
-  */
 }
 
+
+.thumb-col-wrapper{
+  padding: 0 10px;
+  float:left;
+  @media(min-width:768px){
+    width:33.33%;
+  }
+  @media(min-width:992px){
+    width: 20%;
+  }
+  @media(min-width:768px) and (max-width:991px){
+    .clearfix + &{
+      margin-left:16.667%;
+    }
+  }
+}
 .thumbnail{
   @media(min-width:356px) and (max-width:767px){
     img{

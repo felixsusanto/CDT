@@ -1,10 +1,52 @@
+.contact{
+  position: relative;
+  padding: 50px 0;
+  background-color: #FFF1DF;
+}
+
+.bubble{
+  position: relative;
+  margin-bottom: 20px;
+  padding:20px 40px;
+  border-radius:10px;
+  background-color:#fff;
+  box-shadow:-15px 15px rgba(black,0.1);
+  h3{
+    margin-top: 0;
+  }
+  &:after{
+    content:"";
+    position: absolute;
+    top:100%;
+    border:10px solid transparent;
+    border-bottom:none;
+    border-top-color:#fff;
+    @media(min-width:768px){
+      top:50px;
+      left:100%;
+      border:10px solid transparent;
+      border-right:none;
+      border-left-color:#fff;
+
+    }
+  }
+}
+
+.location, .location a{
+  position: relative;
+  padding-left:30px;
+  .icon{
+    position: absolute;
+    left: 0;
+    font-size: 140%;
+  }
+}
+
 #map{
   position: relative;
-  margin-top: 50px;
-  margin-bottom: 50px;
   padding-bottom:50%;
   //pointer-events:none;
-  clip-path:polygon(0 0, 25% 5%, 50% 0, 75% 5%, 100% 0, 100% 100%, 75% 95%, 50% 100%, 25% 95%, 0 100% );
+  clip-path:polygon(0 0, 25% 5%, 50% 0, 75% 5%, 100% 0, 100% 100%, 0 100% );
   @media(min-width:768px){
     padding-bottom:0;
     height:500px;
@@ -23,24 +65,12 @@
   }
 }
 
-.contact{
-  //background:url(../img/page/wood-04.png);
+.map-container{
   position: relative;
-  overflow:none;
-  .pencil-bottom{
-    width: 300px;
-    padding-bottom:unquote((52/269*100)+'%');
-    transform: rotateZ(-45deg);
+  padding-top:50px; 
+  margin-bottom: 6%;
+  .map-shadow{
     position: absolute;
-  }
-}
-
-.location, .location a{
-  position: relative;
-  padding-left:30px;
-  .icon{
-    position: absolute;
-    left: 0;
-    font-size: 140%;
+    top:99%;
   }
 }
