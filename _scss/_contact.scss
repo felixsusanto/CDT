@@ -1,6 +1,7 @@
 .contact{
   position: relative;
-  padding: 50px 0;
+  padding-top: 50px;
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQIW2NkwASSjGhikgwMDM+RBcECIEUwQbgATBBFACQIAKWBBB8HjQwoAAAAAElFTkSuQmCC) repeat;
   background-color: #FFF1DF;
 }
 
@@ -45,7 +46,7 @@
 #map{
   position: relative;
   padding-bottom:50%;
-  //pointer-events:none;
+  pointer-events:none;
   clip-path:polygon(0 0, 25% 5%, 50% 0, 75% 5%, 100% 0, 100% 100%, 0 100% );
   @media(min-width:768px){
     padding-bottom:0;
@@ -62,15 +63,5 @@
     left: 0;
     @include background-image(linear-gradient(to right, $transparent 25%, $stripe 25%, $stripe 50%, $transparent 50%, $transparent 75%, $stripe 75%));
     pointer-events:none;
-  }
-}
-
-.map-container{
-  position: relative;
-  padding-top:50px; 
-  margin-bottom: 6%;
-  .map-shadow{
-    position: absolute;
-    top:99%;
   }
 }

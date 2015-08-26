@@ -10,9 +10,13 @@ $red:#E74C3C;
 }
 
 body{
+  position: relative;
+  padding-top:50px;
   font-family: 'Raleway', sans-serif;
   color:$text;
-} 
+}
+@import "../bower_components/animate.css/animate.min.scss";
+@import "navbar"; 
 @import "top-section";
 @import "skills";
 @import "team";

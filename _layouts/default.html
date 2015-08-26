@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html class="no-js">
   <head>
     <meta charset="UTF-8">
     <title>iMedia revamp</title>
@@ -9,19 +9,36 @@
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/css/lightbox.min.css'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script src="js/prefixfree.min.js"></script>
-
     
   </head>
 
   <body>
     {{ content }}
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!--<script src='js/jquery.min.js'></script>-->
+    <script src='js/bootstrap.min.js'></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js'></script>
-    <script src='js/jquery.enllax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js'></script>
     <script src='js/imagesloaded.pkgd.min.js'></script>
+    <script src='js/smooth-scroll.min.js'></script>
+    <script src="js/modernizr.custom.56711.js"></script>
+    <script>
+      yepnope.injectJs("js/jquery.min.js", function () {
+        console.log("jQuery loaded!");
+      }, {
+        charset: "utf-8"
+      }, 5000);
+      Modernizr.load([{
+        test: Modernizr.touch,
+        nope: 'js/jquery.enllax.min.js'
+      }]);
+    </script>
     <script src="js/index.js"></script>
+    <script>
+      if (!Modernizr.touch) {
+        $(window).enllax();
+      } 
+    </script>
     {% include map.html %}
     
   </body>

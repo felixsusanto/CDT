@@ -1,5 +1,15 @@
 $(document).ready(function(){
-  
+  //**NAVBAR
+  //Scroll spy
+  $('body').scrollspy({ target: '#navbar-spy' });
+  //**SMOOTH SCROLLING
+  //init code for smooth scrolling
+  smoothScroll.init();
+  //**WAYPOINT JS
+  //Scrolling trigger something
+  // $('#team').waypoint(function(){
+  //   $('#team .circle').addClass('bounceIn');
+  // });
   //**PORTFOLIO
   //Plugin setup for portfolio section
   var $container = $('.grid');
@@ -20,8 +30,4 @@ $(document).ready(function(){
       sortBy:'random'
     });
   });
-
-  //**PARALLAX
-  //enllax.js setup for parallax effects
-  $(window).enllax();
 });

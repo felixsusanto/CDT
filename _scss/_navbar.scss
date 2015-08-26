@@ -1,0 +1,27 @@
+.navbar{
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-header button{
+  color:$yellow;
+}
+
+.navbar-inverse .navbar-toggle{
+  border-color:$yellow;
+}
+.navbar-brand{
+  font-weight:bold;
+  .navbar-inverse &{
+    color:$yellow;
+  }
+}
+
+.navbar-inverse {
+  .navbar-nav>.active>a,
+  .navbar-nav>.active>a:focus,
+  .navbar-nav>.active>a:hover{
+    background-color: $yellow;
+    color:#000;
+    font-weight: bold;
+  }
+}
