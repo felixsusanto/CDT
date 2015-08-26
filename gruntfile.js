@@ -64,6 +64,10 @@ module.exports = function(grunt) {
       svgs: {
         files: ['_svgs/*.svg', '!_site/**/*'],
         tasks: ['svgstore', 'shell:jekyllBuild']
+      },
+      js: {
+        files: ['js/*.js', '!_site/**/*'],
+        tasks: ['shell:jekyllBuild']
       }
     },
     // grunt-open will open your browser at the project's URL

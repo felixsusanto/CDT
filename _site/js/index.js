@@ -5,6 +5,10 @@ $(document).ready(function(){
   //**SMOOTH SCROLLING
   //init code for smooth scrolling
   smoothScroll.init();
+  //**PARALLAX
+  //parallax only if browser in desktop
+  if(!Modernizr.touch){$('#portfolio').enllax();};
+  
   //**WAYPOINT JS
   //Scrolling trigger something
   // $('#team').waypoint(function(){
