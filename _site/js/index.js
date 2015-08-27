@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('body').scrollspy({ target: '#navbar-spy' });
   //**SMOOTH SCROLLING
   //init code for smooth scrolling
-  smoothScroll.init();
+  smoothScroll.init({speed: 1300});
   //**PARALLAX
   //parallax only if browser in desktop
   if(!Modernizr.touch){$('#portfolio').enllax();};

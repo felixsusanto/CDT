@@ -45,13 +45,13 @@
   width: 320px;
   margin:0 auto;
   z-index:1;
-  @media(min-width:620px){
+  @media(min-width:640px){
     width: 620px;
   }
-  @media(min-width:930px){
+  @media(min-width:950px){
     width: 930px;
   }
-  @media(min-width:1240px){
+  @media(min-width:1260px){
     width: 1240px;
   }
 }

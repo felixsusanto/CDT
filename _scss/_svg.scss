@@ -18,31 +18,26 @@
  top: 0;
 }
 
-.map-shadow{
-  @include findRatio(390,22);
-}
-
 .pencil{
   margin:20px 0;
   @include findRatio(269,52);
 }
-
+.stationery2{
+  //max-width: 100px;
+  @include findRatio(265,290);
+}
 .stationery{
   max-width:560px;
   margin: 0 auto;
   @include findRatio(351,270);
 }
 
-.cup{
+.cup, .notes{
   display:none;
-  @media(max-width:619px){
-    opacity:0.3;
-  }
-  @media(min-width:481px){
+  @media(min-width:768px){
     $size:300px;
     display:block;
     position: absolute;
-    left:0;
     width: $size;
     height: $size;
     z-index:0;
@@ -53,22 +48,11 @@
   }
 }
 
-.notes{
-  display:none;
-  @media(max-width:619px){
-    opacity:0.3;
+@media(min-width:768px){
+  .cup{
+    left:0;
   }
-  @media(min-width:481px){
-    $size:300px;
-    display:block;
-    position: absolute;
+  .notes{
     right:0;
-    width: $size;
-    height: $size;
-    z-index:0;
-  }
-  @media(min-width:991px){
-    width: 360px;
-    height: 360px;
   }
 }
