@@ -18,6 +18,10 @@
  top: 0;
 }
 
+.chameleon{
+  @include findRatio(651,512);
+}
+
 .pencil{
   margin:20px 0;
   @include findRatio(269,52);
