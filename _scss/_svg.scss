@@ -1,8 +1,6 @@
 @mixin findRatio($width, $height){
   padding-bottom:unquote(($height/$width*100)+'%');
 }
-
-
 .scaling-svg-container {
  position: relative; 
  height: 0; 
@@ -36,7 +34,6 @@
   @include findRatio(269,52);
 }
 .stationery2{
-  //max-width: 100px;
   @include findRatio(265,290);
 }
 .stationery{

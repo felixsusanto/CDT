@@ -16,7 +16,6 @@ body{
   color:$text;
 }
 @import "font";
-@import "../bower_components/animate.css/animate.min.scss";
 @import "navbar"; 
 @import "top-section";
 @import "skills";
@@ -24,7 +23,6 @@ body{
 @import "portfolio";
 @import "contact";
 @import "footer";
-@import "parallax";
 @import "svg";
 @import "reusable";
 
