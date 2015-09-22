@@ -1,7 +1,28 @@
+.billboard-2{
+  background-color: #000;
+  color:#fff;
+  text-align: center;
+  .img-btn{
+    position: relative;
+    .btn{
+      position: absolute;
+      bottom:20px;
+      left:50%;
+      transform:translateX(-50%);
+      @media(min-width:768px){
+        bottom:40px;
+      }
+      @media(min-width:992px){
+        bottom:80px;
+      }
+    }
+  }
+}
+
 .billboard{
   position: relative;
-  background:url(../img/page/jumbo.jpg) no-repeat;
-  background-size:cover;
+  background:url(../img/page/creative_design-02.jpg) no-repeat;
+  background-size:contain;
   background-position:50% 50%;
   background-attachment:fixed;
   .text{
@@ -10,6 +31,10 @@
     color:#fff;
     text-align: center;
     z-index: 1;
+    h1{
+      padding-left:20px;
+      padding-right:20px;
+    }
   }
   &:before{
     content:"";
@@ -30,6 +55,14 @@
       padding:0 30px;
       transform:translateY(-50%);
     }
+  }
+}
+
+.mascot-wrapper{
+  @media(max-width:767px){
+    height:0;
+    padding-bottom:90%;
+    overflow:hidden;
   }
 }
 

@@ -17,7 +17,16 @@
  left: 0; 
  top: 0;
 }
-
+.newshift{
+  margin-bottom: 20px;
+  @include findRatio(466,73);
+  @media(max-width:767px){
+    margin-top: 20px;
+  }
+}
+.mascot{
+  @include findRatio(279,516);
+}
 .chameleon{
   @include findRatio(651,512);
 }
