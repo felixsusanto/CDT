@@ -15,6 +15,7 @@ body{
   font-family: 'Raleway', sans-serif;
   color:$text;
 }
+@import "font";
 @import "../bower_components/animate.css/animate.min.scss";
 @import "navbar"; 
 @import "top-section";
@@ -26,6 +27,5 @@ body{
 @import "parallax";
 @import "svg";
 @import "reusable";
-
 
 
